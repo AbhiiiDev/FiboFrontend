@@ -113,12 +113,15 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
+                       
+                <div className='flex flex-row w-full h-[250px] justify-center bg-[#282828] mt-10 rounded-2xl'>
+                <div className='flex flex-row'>
 
-                <div className='flex flex-row w-[325px] h-[250px] bg-[#282828] mt-10 ml-5 rounded-2xl'>
                     <div className='flex flex-col mt-5 ml-2'>
                         {Percentage.map((percent) => (
                             <p key={percent} className='text-[#B5B5B5] text-[10px] mb-[26px] ml-1'>{percent}%</p>
                         ))}
+                    </div>
                     </div>
                     <div className='flex flex-row ml-4 mt-4 h-[500px]'>
                         {Graph.map((progress) => (
